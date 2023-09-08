@@ -26,17 +26,6 @@
     <p>Therefore, the sum of the two of those numbers is: <span id= "answer">(placeholder for the answer)</span></p>
     <input type="button" id="sumButton" value="Click to add!">
   
-  <script>
-    function displaySum() {
-  let firstNum = Number(document.getElementById('firstNum').innerHTML)
-  let secondNum = Number(document.getElementById('secondNum').innerHTML)
-
-  let total = firstNum + secondNum;
-  document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
-  }
-
-  document.getElementById('sumButton').addEventListener("click", displaySum);
-
-  </script>
+  <script src=./calculate/calculate.js></script>
 </body>
 </html>
