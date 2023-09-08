@@ -19,6 +19,18 @@
        <li>Show you how to design a web page with CSS</li>
        <li>Show you how to program a web document with JavaScript</li>
     </ul>
+  <script>
+    function displaySum() {
+  let firstNum = Number(document.getElementById('firstNum').innerHTML)
+  let secondNum = Number(document.getElementById('secondNum').innerHTML)
+
+  let total = firstNum + secondNum;
+  document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
+  }
+
+  document.getElementById('sumButton').addEventListener("click", displaySum);
+
+  </script>
 
   <p>Next, I am going to add the following two numbers and display the result, all with JavaScript<p/>
     <p>First number:<span id= "firstNum">2</span> <br></p>
